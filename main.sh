@@ -2,7 +2,7 @@ echo " enter the age "
 read age
 if [ $age -lt 13 ] ;
 then
-        echo " child"
+        echo "child"
 elif [ $age -gt 12 -a $age -lt 20 ] ;
 then
         echo "teenager"
