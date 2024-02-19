@@ -1,12 +1,15 @@
-echo " enter the age "
-read age
-if [ $age -lt 13 ] ;
+echo "enter the salary"
+read sal
+if [ $sal -lt 15000 ];
 then
-        echo "child"
-elif [ $age -gt 12 -a $age -lt 20 ] ;
+        echo "no tax"
+elif [ $sal -eq 15000 ];
 then
-        echo "teenager"
-elif [ $age -gt 19 -a $age -lt 59 ] ;
+        echo " taxis 2%"
+elif [ $sal -gt 15000 -a $sal -le 30000 ];
 then
-        echo "adult"
+        echo " tax is 5%"
+elif [ $sal -gt 30000 ];
+then
+        echo " tax is 10%"
 fi
